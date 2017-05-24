@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formularz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <form action="https://formspree.io/dominika.gnich@gmail.com" method="post">
+      
+       <label for="imie">Imię:</label><br/>
+       <input type="text" name="imie" id="imie"/><br/>
+       
+       <label for="nazwisko">Nazwisko:</label><br/>
+       <input type="text" name="nazwisko" id="nazwisko"/><br/>
+       
+       <label for="e-mail">e-mail:</label><br/>
+       <input type="email" name="e-mail" id="e-mail"/><br/>
+       
+       <label for="numer telefonu">numer telefonu:</label><br/>
+       <input type="text" name="numer telefonu" id="numer telefonu"/><br/><br/>
+       
+       <select name="miasto">   
+         <option value="Warszawa">Warszawa</option>    
+         <option value="Gdansk" selected>Gdańsk</option>   
+         <option value="Krakow">Kraków</option> 
+       </select> <br/><br/> 
+       
+       <input type="radio" name="płeć" value="male" checked> Facet<br>
+       <input type="radio" name="płeć" value="female"> Kobitka<br><br/>
+       
+       <input type="checkbox" name="zgoda1" value="tak1"> Zgadzam się na przetwarzanie danych <br>
+       <input type="checkbox" name="zgoda2" value="tak2"> Zgadzam się na otrzymywanie newslettera<br/><br/>
+       
+       <label for="wiadomosc">Wiadomość:</label><br/>
+       <textarea type="text" name="wiadomosc" id="wiadomosc" rows="10" cols="30"></textarea><br/>
+       
+       
+       <input type="submit" value="Wyslij"  onclick="alert(Dzięki za wypełnienie formularzas!')"  />
+       <input type="reset">
+      
+      
+      
+    </form>
+  </body>
+</html>
